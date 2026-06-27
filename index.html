@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thomas Ewing LLC | Industrial Reliability and Maintenance Efficiency Advisors</title>
+<meta name="description" content="Thomas Ewing LLC uses maintenance data analytics and field observation to develop customized cost reduction strategies for industrial clients.">
+<style>
+  :root {
+    --navy-deep: #0a1628;
+    --navy-mid: #14253d;
+    --steel: #8fa3b8;
+    --steel-light: #c4d2e0;
+    --white: #f5f7fa;
+    --accent: #4fb3c4;
+    --rule: rgba(255,255,255,0.25);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--navy-deep);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  .page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image:
+      linear-gradient(180deg, rgba(6,13,24,0.35) 0%, rgba(6,13,24,0.15) 40%, rgba(6,13,24,0.55) 100%),
+      url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0a1628;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px 40px;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 56px;
+  }
+
+  .brand-name {
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+  }
+
+  .brand-name .llc {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--steel-light);
+    margin-top: 4px;
+  }
+
+  .divider {
+    width: 1px;
+    height: 64px;
+    background: var(--rule);
+  }
+
+  .tagline {
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    line-height: 1.7;
+    color: var(--steel-light);
+    text-align: left;
+  }
+
+  .intro {
+    max-width: 760px;
+    font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+    line-height: 1.55;
+    color: var(--white);
+    margin-bottom: 36px;
+    font-weight: 300;
+  }
+
+  .services {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .services li {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--steel);
+    font-weight: 300;
+  }
+
+  footer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 22px 32px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.95rem;
+    color: var(--steel-light);
+  }
+
+  footer .address { text-align: left; line-height: 1.5; }
+  footer .phone { font-size: 1.15rem; color: var(--white); font-weight: 500; }
+  footer a { color: var(--white); text-decoration: none; border-bottom: 1px solid transparent; }
+  footer a:hover, footer a:focus-visible { border-bottom-color: var(--accent); }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 640px) {
+    .brand { flex-direction: column; gap: 14px; }
+    .divider { width: 64px; height: 1px; }
+    .tagline { text-align: center; }
+    footer { flex-direction: column; text-align: center; }
+    footer .address { text-align: center; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <main>
+      <div class="brand">
+        <h1 class="brand-name">Thomas<br>Ewing<span class="llc">LLC</span></h1>
+        <div class="divider"></div>
+        <p class="tagline">Industrial Reliability<br>and<br>Maintenance Efficiency Advisors</p>
+      </div>
+
+      <p class="intro">
+        We use maintenance data analytics and field observation to develop
+        customized cost reduction strategies based on
+      </p>
+
+      <ul class="services">
+        <li>Elimination of Rework</li>
+        <li>Prioritization of Care of Key Assets</li>
+        <li>Work Process Efficiency Gains</li>
+        <li>Preventive and Predictive Maintenance Optimization</li>
+        <li>Hidden Value Discovery via Data Deep Dives</li>
+      </ul>
+    </main>
+
+    <footer>
+      <div class="address">
+        270 Trace Colony Park Dr. Suite B<br>
+        Ridgeland, MS 39157
+      </div>
+      <div class="phone">903-315-8690</div>
+      <div class="email"><a href="mailto:tewing@thomasewingllc.com">tewing@thomasewingllc.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
